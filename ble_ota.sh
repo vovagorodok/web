@@ -8,7 +8,7 @@ BLE_OTA_OUT_DIR=$SCRIPT_DIR/apps/ble_ota
 
 cd $BLE_OTA_REPO_DIR
 flutter clean
-flutter build web --release
+flutter build web --base-href /web/apps/ble_ota/ --release
 
 mkdir -p $BLE_OTA_OUT_DIR
 cp -r $BLE_OTA_WEB_DIR/. $BLE_OTA_OUT_DIR
