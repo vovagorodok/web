@@ -17,18 +17,18 @@ rm -rf $BLICHESS_OUT_DIR
 mkdir -p $BLICHESS_OUT_DIR
 cp -r $BLICHESS_BUILD_DIR/. $BLICHESS_OUT_DIR
 
-cd $BLICHESS_OUT_DIR
-INDEX_JS=$(ls -1t index-*.js | head -n 1)
+# cd $BLICHESS_OUT_DIR
+# INDEX_JS=$(ls -1t index-*.js | head -n 1)
 
-cat > index.html <<EOF
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Lichess Web</title>
-</head>
-<body>
-  <script type="module" src="./$INDEX_JS"></script>
-</body>
-</html>
-EOF
+# cat > index.html <<EOF
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#   <meta charset="UTF-8">
+#   <title>Lichess Web</title>
+# </head>
+# <body>
+#   <script type="module" src="./$INDEX_JS"></script>
+# </body>
+# </html>
+# EOF
