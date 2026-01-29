@@ -1,0 +1,1 @@
+import{W as e}from"./main.js";class ToastWeb extends e{async show(e){if("undefined"!=typeof document){let t=2e3;e.duration&&(t="long"===e.duration?3500:2e3);const o=document.createElement("pwa-toast");o.duration=t,o.message=e.text,document.body.appendChild(o)}}}export{ToastWeb};

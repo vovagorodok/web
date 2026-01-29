@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd $( dirname $0 ) && pwd )
+BLIDRAUGHTS_REPO_DIR=$SCRIPT_DIR/../blidraughts
+BLIDRAUGHTS_WEB_DIR=$BLIDRAUGHTS_REPO_DIR/www
+BLIDRAUGHTS_OUT_DIR=$SCRIPT_DIR/apps/blidraughts
+
+set -e
+
+cd $BLIDRAUGHTS_REPO_DIR
+./build_release.sh
+
+rm -rf $BLIDRAUGHTS_OUT_DIR
+mkdir -p $BLIDRAUGHTS_OUT_DIR
+cp -r $BLIDRAUGHTS_WEB_DIR/. $BLIDRAUGHTS_OUT_DIR

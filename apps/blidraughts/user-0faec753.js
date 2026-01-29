@@ -1,0 +1,1 @@
+import{s as t,c8 as s,by as a,bx as r,c9 as e,ca as c,bA as i}from"./main.js";import{l as o}from"./layout-26cca27d.js";const l={oninit({attrs:a}){t.createDefault(),this.ctrl=s(a.id)},oncreate(t){this.ctrl.isMe()?a(t.dom):r(t.dom)},view(){const t=this.ctrl.user();return t?o.free(e(t,this.ctrl),c(t,this.ctrl)):o.free(i(),null)}};export{l as default};
